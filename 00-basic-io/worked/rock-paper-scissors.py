@@ -9,20 +9,13 @@ def main():
     player_guess : int = 0 # change this
 
     if player_guess == ai_guess:
-        # something here
-        pass
+        game_state = 0
         
     elif (player_guess + 1) % 3 == ai_guess:
-        # (player_guess + 1) % 3 means "the next thing in the list"
-        # for example, this is true when player_guess is 0 (paper) and ai_guess is 1 (scissor) 
-        # something here
-        pass
+        game_state = -1
 
     else:
-        # something here
-        pass
-
-    # changes end here
+        game_state = 1
     
     print (f"You guessed {names[player_guess]}.")
     print (f"The AI guessed {names[ai_guess]}.")
